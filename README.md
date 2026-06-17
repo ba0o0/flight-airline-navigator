@@ -1,6 +1,10 @@
 # Flight Airline Navigator
 A text-based application that allows user to manage airport routes and navigation.
 
+## Overview
+
+A C++ application for building and managing airline routes using a custom linked-list implementation. Users can create routes from a list of airports, display them with total distance, remove airports, and reverse routes.
+
 ## Features
 
 - **Route Creation** — Build custom flight routes by selecting from 40 preloaded airports. Add as many stops as you want (minimum 2), and the route is automatically named after the first and last airport (e.g. "Amsterdam to Bangkok").
@@ -12,8 +16,6 @@ A text-based application that allows user to manage airport routes and navigatio
 - **Route Reversal** — Reverse the order of airports in any route. Can be applied multiple times. The route name updates to match (e.g. "Bangkok to Amsterdam"). Nodes are physically rotated — not just data-swapped.
 
 - **Distance Calculation** — Total mileage is computed for any route using geographic coordinates (degrees north/west) via the provided `CalcDistance` function, summing leg-by-leg distances across the full route.
-
-- **Input Validation** — All menu inputs are validated and re-prompted if out of range, ensuring the program never crashes from bad user input.
 
 ## How use my makefile
 ```bash
